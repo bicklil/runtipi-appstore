@@ -1,0 +1,41 @@
+{
+    "name": "Gluetun",
+    "available": true,
+    "port": 8685,
+    "exposable": false, 
+    "id": "gluetun", 
+    "description": "vpn qui supporte proton", 
+    "tipi_version": 1, 
+    "version": "3.38.0", 
+    "categories": ["network"],
+    "short_desc": "vpn",
+    "author": "qdm12",
+    "source": "https://github.com/qdm12/gluetun",
+    "website": "https://github.com/qdm12/gluetun",
+    "form_fields": [
+        {
+            "type": "text",
+            "label": "protonvpn username",
+            "max": 50,
+            "min": 3,
+            "required": true,
+            "env_variable": "PROTON_DEFAULTUSER_NAME"
+          },
+          {
+            "type": "text",
+            "label": "protonvpn country,Comma separated list of countries",
+            "max": 50,
+            "min": 3,
+            "required": true,
+            "env_variable": "PROTON_COUNTRY"
+          },
+          {
+            "type": "password",
+            "label": "protonvpn password",
+            "max": 50,
+            "min": 8,
+            "required": true,
+            "env_variable": "PROTON_DEFAULTUSER_PASS"
+          }
+    ]
+}
