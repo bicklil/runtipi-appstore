@@ -5,7 +5,7 @@
     "exposable": false, 
     "id": "gluetun", 
     "description": "vpn qui supporte proton", 
-    "tipi_version": 1, 
+    "tipi_version": 2, 
     "version": "3.38.0", 
     "categories": ["network"],
     "short_desc": "vpn",
