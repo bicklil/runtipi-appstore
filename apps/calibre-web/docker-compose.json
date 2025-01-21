@@ -16,10 +16,15 @@
           "containerPath": "/config"
         },
         {
+          "hostPath": "${APP_DATA_DIR}/data/calibre",
+          "containerPath": "/calibre"
+        },
+        {
           "hostPath": "${ROOT_FOLDER_HOST}/media/data/books",
           "containerPath": "/books"
         }
       ]
     }
-  ]
+  ],
+  "$schema": "../dynamic-compose-schema.json"
 }
