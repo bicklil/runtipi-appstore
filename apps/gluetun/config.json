@@ -7,7 +7,7 @@
     "id": "gluetun", 
     "description": "vpn qui supporte proton", 
     "tipi_version": 3, 
-    "version": "3.39.0", 
+    "version": "3.39.1", 
     "categories": ["network"],
     "short_desc": "vpn",
     "author": "qdm12",
