@@ -3,6 +3,7 @@
     "available": true,
     "port": 8685,
     "exposable": false, 
+    "dynamic_config": true,
     "id": "gluetun", 
     "description": "vpn qui supporte proton", 
     "tipi_version": 3, 
