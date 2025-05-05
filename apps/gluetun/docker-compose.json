@@ -1,0 +1,18 @@
+{
+    "services": [
+      {
+        "name": "gluetun",
+        "image": "qmcgaw/gluetun",
+        "environment": {
+          "VPN_SERVICE_PROVIDER": "protonvpn",
+          "OPENVPN_USER": "${PROTON_DEFAULTUSER_NAME}",
+          "OPENVPN_PASSWORD": "${PROTON_DEFAULTUSER_PASS}",
+          "SERVER_COUNTRIES": "${PROTON_COUNTRY}",
+          "VPN_PORT_FORWARDING": "ON"
+        },
+        "capAdd": [
+          "NET_ADMIN"
+        ]
+      }
+    ]
+  }
