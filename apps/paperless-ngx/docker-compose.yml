@@ -2,7 +2,7 @@ version: '3.7'
 services:
   paperless-ngx:
     container_name: paperless-ngx
-    image: ghcr.io/paperless-ngx/paperless-ngx:2.18.2
+    image: ghcr.io/paperless-ngx/paperless-ngx:2.18.3
     restart: unless-stopped
     depends_on:
       - db
@@ -71,7 +71,7 @@ services:
     labels:
       runtipi.managed: true
   gotenberg:
-    image: gotenberg/gotenberg:8.22
+    image: gotenberg/gotenberg:8.23
     restart: unless-stopped
     command:
       - gotenberg
