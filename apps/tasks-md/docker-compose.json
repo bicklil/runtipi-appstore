@@ -2,7 +2,7 @@
   "services": [
     {
       "name": "tasks-md",
-      "image": "baldissaramatheus/tasks.md:3.1.0",
+      "image": "baldissaramatheus/tasks.md:3.1.1",
       "isMain": true,
       "internalPort": 8080,
       "environment": [
@@ -28,5 +28,5 @@
     }
   ],
   "schemaVersion": 2,
-  "$schema": "https://schemas.runtipi.io/dynamic-compose.json"
+  "$schema": "https://schemas.runtipi.io/v2/dynamic-compose.json"
 }

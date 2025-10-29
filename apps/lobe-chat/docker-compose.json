@@ -2,7 +2,7 @@
   "services": [
     {
       "name": "lobe-chat",
-      "image": "lobehub/lobe-chat:1.142.3",
+      "image": "lobehub/lobe-chat:1.142.7",
       "isMain": true,
       "internalPort": 3210,
       "environment": [
@@ -26,5 +26,5 @@
     }
   ],
   "schemaVersion": 2,
-  "$schema": "https://schemas.runtipi.io/dynamic-compose.json"
+  "$schema": "https://schemas.runtipi.io/v2/dynamic-compose.json"
 }

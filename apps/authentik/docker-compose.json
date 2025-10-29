@@ -1,7 +1,7 @@
 {
   "services": [
     {
-      "image": "ghcr.io/goauthentik/server:2025.8.4",
+      "image": "ghcr.io/goauthentik/server:2025.10.0",
       "name": "authentik",
       "internalPort": 9000,
       "isMain": true,
@@ -51,7 +51,7 @@
       "dependsOn": ["authentik-db", "authentik-redis"]
     },
     {
-      "image": "ghcr.io/goauthentik/server:2025.8.4",
+      "image": "ghcr.io/goauthentik/server:2025.10.0",
       "name": "authentik-worker",
       "command": "worker",
       "user": "root",
@@ -152,5 +152,5 @@
     }
   ],
   "schemaVersion": 2,
-  "$schema": "https://schemas.runtipi.io/dynamic-compose.json"
+  "$schema": "https://schemas.runtipi.io/v2/dynamic-compose.json"
 }

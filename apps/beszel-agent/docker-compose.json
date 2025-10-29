@@ -2,7 +2,7 @@
   "services": [
     {
       "name": "beszel-agent",
-      "image": "henrygd/beszel-agent:0.14.1",
+      "image": "henrygd/beszel-agent:0.15.2",
       "isMain": true,
       "internalPort": 45876,
       "networkMode": "host",
@@ -26,5 +26,5 @@
     }
   ],
   "schemaVersion": 2,
-  "$schema": "https://schemas.runtipi.io/dynamic-compose.json"
+  "$schema": "https://schemas.runtipi.io/v2/dynamic-compose.json"
 }

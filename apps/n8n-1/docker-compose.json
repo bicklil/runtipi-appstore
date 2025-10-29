@@ -2,7 +2,7 @@
   "services": [
     {
       "name": "n8n-1",
-      "image": "n8nio/n8n:1.117.1",
+      "image": "n8nio/n8n:1.118.1",
       "isMain": true,
       "internalPort": 5678,
       "environment": [
@@ -103,5 +103,5 @@
     }
   ],
   "schemaVersion": 2,
-  "$schema": "https://schemas.runtipi.io/dynamic-compose.json"
+  "$schema": "https://schemas.runtipi.io/v2/dynamic-compose.json"
 }

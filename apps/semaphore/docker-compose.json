@@ -2,7 +2,7 @@
   "services": [
     {
       "name": "semaphore",
-      "image": "semaphoreui/semaphore:v2.16.34",
+      "image": "semaphoreui/semaphore:v2.16.36",
       "isMain": true,
       "internalPort": 3000,
       "environment": [
@@ -96,5 +96,5 @@
     }
   ],
   "schemaVersion": 2,
-  "$schema": "https://schemas.runtipi.io/dynamic-compose.json"
+  "$schema": "https://schemas.runtipi.io/v2/dynamic-compose.json"
 }
