@@ -1,0 +1,25 @@
+{
+  "name": "planning hopital",
+  "id": "planning-hopital",
+  "min_tipi_version": "4.5.0",
+  "available": true,
+  "short_desc": "application permettant de générer un planning de gardes et astreintes.",
+  "author": "jc",
+  "port": 9999,
+  "categories": [
+    "utilities"
+  ],
+  "description": "application permettant de générer un planning de gardes et astreintes.",
+  "tipi_version": 3,
+  "version": "v1.0.0",
+  "source": "https://github.com/bicklil",
+  "exposable": true,
+  "supported_architectures": [
+    "arm64",
+    "amd64"
+  ],
+  "created_at": 1767374417985,
+  "updated_at": 1767374417985,
+  "dynamic_config": true,
+  "form_fields": []
+}
