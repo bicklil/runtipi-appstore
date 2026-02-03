@@ -5,12 +5,6 @@
         {
             "name": "backend",
             "image": "localhost:42420/planning-backend:latest",
-            "addPorts": [
-                {
-                    "containerPort": 5000,
-                    "hostPort": 9999
-                }
-            ],
             "volumes": [
                 {
                     "hostPath": "./data",
