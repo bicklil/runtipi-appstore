@@ -27,7 +27,7 @@
         },
         {
             "name": "frontend",
-            "image": "localhost:42420/planning-fronted",
+            "image": "localhost:42420/planning-frontend",
             "internalPort": 80,
             "dependsOn": [
                 "backend"
