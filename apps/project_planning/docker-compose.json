@@ -1,10 +1,10 @@
 {
-    "$schema": "https://schemas.runtipi.io/v2/dynamic-compose.json",
     "schemaVersion": 2,
+    "$schema": "https://schemas.runtipi.io/v2/dynamic-compose.json",
     "services": [
         {
             "name": "backend",
-            "image": "localhost:42420/planning-backend",
+            "image": "planning-backend:latest",
             "addPorts": [
                 {
                     "containerPort": 5000,
@@ -13,21 +13,25 @@
             ],
             "volumes": [
                 {
-                    "hostPath": "./planning-app",
-                    "containerPath": "/app"
+                    "hostPath": "./data",
+                    "containerPath": "/data"
                 }
             ],
             "environment": [
                 {
                     "key": "FLASK_ENV",
                     "value": "development"
+                },
+                {
+                    "key": "DATABASE_URL",
+                    "value": "sqlite:////data/planning.db"
                 }
             ],
             "addToMainNetwork": true
         },
         {
             "name": "frontend",
-            "image": "localhost:42420/planning-frontend",
+            "image": "planning-frontend:latest",
             "internalPort": 80,
             "dependsOn": [
                 "backend"
