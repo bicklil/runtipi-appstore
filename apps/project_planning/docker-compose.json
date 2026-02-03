@@ -4,7 +4,7 @@
     "services": [
         {
             "name": "backend",
-            "image": "planning-backend:latest",
+            "image": "localhost:42420/planning-backend:latest",
             "addPorts": [
                 {
                     "containerPort": 5000,
@@ -31,7 +31,7 @@
         },
         {
             "name": "frontend",
-            "image": "planning-frontend:latest",
+            "image": "localhost:42420/planning-frontend:latest",
             "internalPort": 80,
             "dependsOn": [
                 "backend"
