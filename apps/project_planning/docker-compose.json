@@ -27,6 +27,12 @@
             "name": "frontend",
             "image": "localhost:42420/planning-frontend:latest",
             "internalPort": 80,
+            "addPorts": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 9999
+                }
+            ],
             "dependsOn": [
                 "backend"
             ],
