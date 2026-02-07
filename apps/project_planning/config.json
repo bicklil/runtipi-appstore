@@ -6,12 +6,12 @@
   "available": true,
   "short_desc": "application permettant de générer un planning de gardes et astreintes.",
   "author": "jc",
-  "port": 9999,
+  "port": 80,
   "categories": [
     "utilities"
   ],
   "description": "application permettant de générer un planning de gardes et astreintes.",
-  "tipi_version": 4,
+  "tipi_version": 5,
   "version": "v1.0.0",
   "source": "https://github.com/bicklil",
   "exposable": true,
