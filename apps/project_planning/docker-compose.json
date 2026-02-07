@@ -25,6 +25,7 @@
         },
         {
             "name": "frontend",
+            "isMain": true,
             "image": "localhost:42420/planning-frontend:latest",
             "internalPort": 80,
             "addPorts": [
