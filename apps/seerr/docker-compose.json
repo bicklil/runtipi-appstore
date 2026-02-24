@@ -1,28 +1,28 @@
 {
   "services": [
     {
-      "name": "tautulli",
-      "image": "lscr.io/linuxserver/tautulli:2.16.1",
+      "name": "seerr",
+      "image": "ghcr.io/seerr-team/seerr:v3.0.1",
       "isMain": true,
-      "internalPort": 8181,
+      "internalPort": 5055,
       "environment": [
         {
-          "key": "PUID",
-          "value": "1000"
-        },
-        {
-          "key": "PGID",
-          "value": "1000"
+          "key": "LOG_LEVEL",
+          "value": "debug"
         },
         {
           "key": "TZ",
           "value": "${TZ}"
+        },
+        {
+          "key": "PORT",
+          "value": "5055"
         }
       ],
       "volumes": [
         {
           "hostPath": "${APP_DATA_DIR}/data/config",
-          "containerPath": "/config"
+          "containerPath": "/app/config"
         }
       ]
     }
