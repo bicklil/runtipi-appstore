@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/meienberger/runtipi-appstore#readme",
   "devDependencies": {
-    "@biomejs/biome": "^2.4.11",
+    "@biomejs/biome": "^2.4.12",
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
     "@commitlint/cz-commitlint": "^20.5.1",
@@ -33,10 +33,10 @@
     "commitizen": "^4.3.1",
     "jest": "^30.3.0",
     "js-yaml": "^4.1.1",
-    "lefthook": "^2.1.5",
+    "lefthook": "^2.1.6",
     "semver": "^7.7.4",
     "ts-jest": "^29.4.9",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.3"
   },
   "config": {
     "commitizen": {
