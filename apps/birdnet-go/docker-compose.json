@@ -3,8 +3,10 @@
       {
         "name": "birdnet-go",
         "image": "tphakala/birdnet-go:latest",
+        "internalPort": 9111,
         "environment": {
-            "TZ":"Europe/Paris"
+            "TZ":"Europe/Paris",
+            "WEB_PORT":"9111"
         },
         "capAdd": [
           "NET_ADMIN"
