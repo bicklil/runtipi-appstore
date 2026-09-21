@@ -1,0 +1,14 @@
+{
+    "services": [
+      {
+        "name": "birdnet-go",
+        "image": "ghcr.io/tphuber/birdnet-go:latest",
+        "environment": {
+            "TZ":"Europe/Paris"
+        },
+        "capAdd": [
+          "NET_ADMIN"
+        ]
+      }
+    ]
+  }

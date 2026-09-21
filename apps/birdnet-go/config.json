@@ -1,0 +1,18 @@
+{
+    "name": "birdnet-go",
+    "available": true,
+    "port": 9111,
+    "exposable": true, 
+    "dynamic_config": true,
+    "id": "birdnet-go", 
+    "description": "pour les cuicui", 
+    "tipi_version": 5, 
+    "version": "20260823", 
+    "categories": ["network"],
+    "short_desc": "vpn",
+    "author": "qdm12",
+    "source": "https://github.com/tphakala/birdnet-go",
+    "website": "https://github.com/tphakala/birdnet-go",
+    "form_fields": [
+    ]
+}
