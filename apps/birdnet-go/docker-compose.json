@@ -2,7 +2,7 @@
     "services": [
       {
         "name": "birdnet-go",
-        "image": "ghcr.io/tphuber/birdnet-go:latest",
+        "image": "tphakala/birdnet-go:latest",
         "environment": {
             "TZ":"Europe/Paris"
         },
