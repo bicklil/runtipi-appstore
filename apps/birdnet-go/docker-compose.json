@@ -4,6 +4,12 @@
         "name": "birdnet-go",
         "image": "tphakala/birdnet-go:latest",
         "internalPort": 9111,
+        "addPorts": [
+                {
+                    "containerPort": 8080,
+                    "hostPort": 9111
+                }
+            ],
         "environment": {
             "TZ":"Europe/Paris",
             "WEB_PORT":"9111"
