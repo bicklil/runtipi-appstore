@@ -11,8 +11,8 @@
     "utilities"
   ],
   "description": "application permettant de générer un planning de gardes et astreintes.",
-  "tipi_version": 11,
-  "version": "v1.0.0",
+  "tipi_version": 12,
+  "version": "v1.1.0",
   "source": "https://github.com/bicklil",
   "exposable": true,
   "supported_architectures": [
