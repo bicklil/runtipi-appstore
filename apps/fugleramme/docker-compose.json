@@ -5,17 +5,10 @@
             "name": "fugleramme",
             "isMain": true,
             "image": "ghcr.io/arnegiacomo/fugleramme:latest",
-            "internalPort": 9112,
             "addPorts": [
                 {
                     "containerPort": 8080,
                     "hostPort": 9112
-                }
-            ],
-            "volumes": [
-                {
-                "hostPath": "${APP_DATA_DIR}/data",
-                "containerPath": "/app/data"
                 }
             ],
             "environment": [{
