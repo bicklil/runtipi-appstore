@@ -12,15 +12,16 @@
                     "containerPort": 8080,
                     "hostPort": 9112
                 }
-            ],"environment": {
-            " FUGLERAMME_DETECTOR_URL":"http://192.168.1.150:9111"
-        },
+            ],
             "volumes": [
                 {
                 "hostPath": "${APP_DATA_DIR}/data",
                 "containerPath": "/app/data"
                 }
             ],
+            "environment": {
+            " FUGLERAMME_DETECTOR_URL":"http://192.168.1.150:9111"
+            },
             "addToMainNetwork": true
         }
     ]
