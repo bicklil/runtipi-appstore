@@ -1,0 +1,27 @@
+{
+    "schemaVersion": 2,
+    "$schema": "https://schemas.runtipi.io/v2/dynamic-compose.json",
+    "services": [
+        {
+            "name": "fugleramme",
+            "isMain": true,
+            "image": "ghcr.io/arnegiacomo/fugleramme:latest",
+            "internalPort": 9112,
+            "addPorts": [
+                {
+                    "containerPort": 8080,
+                    "hostPort": 9112
+                }
+            ],"environment": {
+            " FUGLERAMME_DETECTOR_URL":"http://192.168.1.150:9111"
+        },
+            "volumes": [
+                {
+                "hostPath": "${APP_DATA_DIR}/data",
+                "containerPath": "/app/data"
+                }
+            ],
+            "addToMainNetwork": true
+        }
+    ]
+}
