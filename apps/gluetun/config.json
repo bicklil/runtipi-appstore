@@ -6,8 +6,8 @@
     "dynamic_config": true,
     "id": "gluetun", 
     "description": "vpn qui supporte proton", 
-    "tipi_version": 5, 
-    "version": "3.41.1", 
+    "tipi_version": 6, 
+    "version": "3.41.3", 
     "categories": ["network"],
     "short_desc": "vpn",
     "author": "qdm12",
@@ -16,7 +16,7 @@
     "form_fields": [
         {
             "type": "text",
-            "label": "protonvpn username",
+            "label": "protonvpn username (OpenVPN, ajouter +pmp pour la redirection de port)",
             "max": 50,
             "min": 3,
             "required": true,

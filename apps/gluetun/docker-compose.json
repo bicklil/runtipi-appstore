@@ -1,18 +1,18 @@
 {
-    "services": [
-      {
-        "name": "gluetun",
-        "image": "qmcgaw/gluetun",
-        "environment": {
-          "VPN_SERVICE_PROVIDER": "protonvpn",
-          "OPENVPN_USER": "${PROTON_DEFAULTUSER_NAME}",
-          "OPENVPN_PASSWORD": "${PROTON_DEFAULTUSER_PASS}",
-          "SERVER_COUNTRIES": "${PROTON_COUNTRY}",
-          "VPN_PORT_FORWARDING": "ON"
-        },
-        "capAdd": [
-          "NET_ADMIN"
-        ]
-      }
-    ]
-  }
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "gluetun",
+      "image": "qmcgaw/gluetun:v3.41.3",
+      "isMain": true,
+      "environment": [
+        { "key": "VPN_SERVICE_PROVIDER", "value": "protonvpn" },
+        { "key": "OPENVPN_USER", "value": "${PROTON_DEFAULTUSER_NAME}" },
+        { "key": "OPENVPN_PASSWORD", "value": "${PROTON_DEFAULTUSER_PASS}" },
+        { "key": "SERVER_COUNTRIES", "value": "${PROTON_COUNTRY}" },
+        { "key": "VPN_PORT_FORWARDING", "value": "ON" }
+      ],
+      "capAdd": ["NET_ADMIN"]
+    }
+  ]
+}
