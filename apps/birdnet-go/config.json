@@ -6,7 +6,7 @@
   "exposable": true,
   "dynamic_config": true,
   "port": 9111,
-  "tipi_version": 6,
+  "tipi_version": 7,
   "version": "20261031",
   "categories": ["utilities"],
   "description": "Détection en temps réel des chants d'oiseaux grâce à BirdNET.",
