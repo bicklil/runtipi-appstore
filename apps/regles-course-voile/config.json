@@ -6,7 +6,7 @@
   "available": true,
   "short_desc": "Apprendre les règles de course à la voile (RCV) avec des situations animées.",
   "author": "jc",
-  "port": 80,
+  "port": 9114,
   "categories": ["utilities"],
   "description": "Application web pour apprendre les règles de course à la voile (RCV, partie 2) : quiz de situations animées, résumé des règles 10 à 24 et bac à sable.",
   "tipi_version": 3,
