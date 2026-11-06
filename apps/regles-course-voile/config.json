@@ -1,0 +1,19 @@
+{
+  "$schema": "../app-info-schema.json",
+  "name": "Règles de course à la voile",
+  "id": "regles-course-voile",
+  "min_tipi_version": "4.5.0",
+  "available": true,
+  "short_desc": "Apprendre les règles de course à la voile (RCV) avec des situations animées.",
+  "author": "jc",
+  "port": 9113,
+  "categories": ["utilities"],
+  "description": "Application web pour apprendre les règles de course à la voile (RCV, partie 2) : quiz de situations animées, résumé des règles 10 à 24 et bac à sable.",
+  "tipi_version": 1,
+  "version": "1.0.0",
+  "source": "https://github.com/bicklil/regles-course-voile",
+  "exposable": true,
+  "supported_architectures": ["arm64", "amd64"],
+  "dynamic_config": true,
+  "form_fields": []
+}
