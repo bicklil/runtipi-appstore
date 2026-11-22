@@ -54,10 +54,13 @@
     },
     {
       "name": "matter-server",
-      "image": "ghcr.io/home-assistant-libs/python-matter-server:stable",
+      "image": "ghcr.io/matter-js/matterjs-server:stable",
       "networkMode": "host",
-      "securityOpt": [
-        "apparmor:unconfined"
+      "environment": [
+        {
+          "key": "TZ",
+          "value": "${TZ}"
+        }
       ],
       "volumes": [
         {
