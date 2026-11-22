@@ -35,6 +35,14 @@
         {
           "key": "OT_WEB_LISTEN_PORT",
           "value": "8080"
+        },
+        {
+          "key": "OT_REST_LISTEN_ADDR",
+          "value": "0.0.0.0"
+        },
+        {
+          "key": "OT_REST_LISTEN_PORT",
+          "value": "8081"
         }
       ],
       "volumes": [
