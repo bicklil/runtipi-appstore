@@ -14,7 +14,7 @@
       "environment": [
         {
           "key": "OT_RCP_DEVICE",
-          "value": "spinel+hdlc+uart:///dev/ttyUSB0?uart-baudrate=460800&uart-flow-control"
+          "value": "${OTBR_RCP_URL}"
         },
         {
           "key": "OT_INFRA_IF",
