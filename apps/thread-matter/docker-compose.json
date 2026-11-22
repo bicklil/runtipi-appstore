@@ -8,7 +8,9 @@
       "isMain": true,
       "networkMode": "host",
       "privileged": true,
-      "devices": ["/dev/serial/by-id/${OTBR_DEVICE}:/dev/ttyUSB0"],
+      "devices": [
+        "/dev/serial/by-id/${OTBR_DEVICE}:/dev/ttyUSB0"
+      ],
       "environment": [
         {
           "key": "OT_RCP_DEVICE",
@@ -25,6 +27,14 @@
         {
           "key": "OT_LOG_LEVEL",
           "value": "7"
+        },
+        {
+          "key": "OT_WEB_LISTEN_ADDR",
+          "value": "0.0.0.0"
+        },
+        {
+          "key": "OT_WEB_LISTEN_PORT",
+          "value": "8080"
         }
       ],
       "volumes": [
@@ -38,7 +48,9 @@
       "name": "matter-server",
       "image": "ghcr.io/home-assistant-libs/python-matter-server:stable",
       "networkMode": "host",
-      "securityOpt": ["apparmor:unconfined"],
+      "securityOpt": [
+        "apparmor:unconfined"
+      ],
       "volumes": [
         {
           "hostPath": "${APP_DATA_DIR}/data/matter-data",
