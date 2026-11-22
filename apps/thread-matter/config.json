@@ -1,0 +1,34 @@
+{
+  "$schema": "../app-info-schema.json",
+  "name": "Thread & Matter",
+  "id": "thread-matter",
+  "min_tipi_version": "4.5.0",
+  "available": true,
+  "short_desc": "OpenThread Border Router et Matter Server pour la domotique.",
+  "author": "jc",
+  "port": 8081,
+  "categories": ["automation"],
+  "description": "OpenThread Border Router (OTBR) avec une clé Zigbee/Thread USB, et Matter Server (python-matter-server) pour Home Assistant. Les deux services tournent en réseau hôte.",
+  "tipi_version": 1,
+  "version": "1.0.0",
+  "source": "https://github.com/openthread/ot-br-posix",
+  "website": "https://openthread.io/guides/border-router",
+  "exposable": false,
+  "supported_architectures": ["arm64", "amd64"],
+  "dynamic_config": true,
+  "form_fields": [
+    {
+      "type": "text",
+      "label": "Chemin de la clé USB (ex: /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_XXXX-if00-port0)",
+      "required": true,
+      "env_variable": "OTBR_DEVICE"
+    },
+    {
+      "type": "text",
+      "label": "Interface réseau de l'hôte (vérifie avec `ip a`)",
+      "required": true,
+      "default": "eth0",
+      "env_variable": "OTBR_INFRA_IF"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "$schema": "https://schemas.runtipi.io/v2/dynamic-compose.json",
+  "services": [
+    {
+      "name": "otbr",
+      "image": "openthread/border-router:latest",
+      "isMain": true,
+      "networkMode": "host",
+      "privileged": true,
+      "devices": ["${OTBR_DEVICE}:/dev/ttyUSB0"],
+      "environment": [
+        {
+          "key": "OT_RCP_DEVICE",
+          "value": "spinel+hdlc+uart:///dev/ttyUSB0?uart-baudrate=460800&uart-flow-control"
+        },
+        {
+          "key": "OT_INFRA_IF",
+          "value": "${OTBR_INFRA_IF}"
+        },
+        {
+          "key": "OT_THREAD_IF",
+          "value": "wpan0"
+        },
+        {
+          "key": "OT_LOG_LEVEL",
+          "value": "7"
+        }
+      ],
+      "volumes": [
+        {
+          "hostPath": "${APP_DATA_DIR}/data/otbr-data",
+          "containerPath": "/data"
+        }
+      ]
+    },
+    {
+      "name": "matter-server",
+      "image": "ghcr.io/home-assistant-libs/python-matter-server:stable",
+      "networkMode": "host",
+      "securityOpt": ["apparmor:unconfined"],
+      "volumes": [
+        {
+          "hostPath": "${APP_DATA_DIR}/data/matter-data",
+          "containerPath": "/data"
+        },
+        {
+          "hostPath": "/run/dbus",
+          "containerPath": "/run/dbus",
+          "readOnly": true
+        }
+      ]
+    }
+  ]
+}
