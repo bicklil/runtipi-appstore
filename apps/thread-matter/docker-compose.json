@@ -60,6 +60,10 @@
         {
           "key": "TZ",
           "value": "${TZ}"
+        },
+        {
+          "key": "PORT",
+          "value": "8082"
         }
       ],
       "volumes": [
